@@ -1,5 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  /* height: 100vh; */
+  background-color: #2b2922;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+}
+
+.lists ul {
+  display: flex;
+  list-style: none;
+}
+
+.lists ul li {
+  margin: 0 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.lists ul li:hover {
+  opacity: 1;
+}
+
+.header__nav button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #a08f36;
+  color: #a68e17;
+  cursor: pointer;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.header__content div:nth-child(1) {
+  flex-basis: 50%;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__content div:nth-child(2) {
+  flex-basis: 50%;
+  color: #fff;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.header__banner {
+  background: url("./pexels-ekaterina-bolovtsova-6077326.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .left {
+  width: 70px;
+  height: 70px;
+  background-color: #39372d;
+  color: #a08f36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #a08f36;
+}
+
+.footer .right {
+  width: 70px;
+  height: 70px;
+  background-color: #a08f36;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right .circle {
+  border: 1px solid #fff;
 }
